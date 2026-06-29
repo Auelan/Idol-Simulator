@@ -1,0 +1,92 @@
+body {
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* 模擬手機外框 */
+.phone-container {
+    width: 375px; /* 手機寬度 */
+    min-height: 667px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.header-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stat-box span {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #ffccd5; /* 粉色頭像背景 */
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.tag {
+    background-color: #ffeff1;
+    color: #ff4d4f;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.progress-bar-bg {
+    background-color: #eee;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    background-color: #ff4d4f;
+    height: 100%;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    background-color: #fff0f6;
+    color: #c41d7f;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #ffadd2;
+}
+
+.log-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666;
+}
