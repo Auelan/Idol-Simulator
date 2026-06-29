@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愛豆模擬器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-container">
+        <!-- 頂部數據欄 -->
+        <div class="header-stats">
+            <div class="stat-box">
+                <span id="posts">3</span>
+                <small>帖子</small>
+            </div>
+            <div class="stat-box">
+                <span id="fans">55.8萬</span>
+                <small>粉絲</small>
+            </div>
+            <div class="stat-box">
+                <span id="following">8</span>
+                <small>關注</small>
+            </div>
+        </div>
+
+        <!-- 角色信息 -->
+        <div class="profile-section">
+            <div class="avatar"></div> <!-- 這裡以後放頭像圖片 -->
+            <h2>music <span class="tag">練習生</span></h2>
+            <p>清純系 · 唱跳 · 雙性戀</p>
+            <p class="bio">ε٩(๑> ₃ <)۶з</p>
+        </div>
+
+        <!-- 進度條 -->
+        <div class="progress-area">
+            <p>本旬進度: <span id="current-progress">3/3</span> 次操作</p>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 100%;"></div>
+            </div>
+        </div>
+
+        <!-- 功能按鈕區 -->
+        <div class="action-grid">
+            <button onclick="train('sing')">🎤 聲樂訓練</button>
+            <button onclick="train('dance')">💃 舞蹈訓練</button>
+            <button onclick="postMoment()">📸 發布動態</button>
+            <button onclick="rest()">🛌 休息睡覺</button>
+        </div>
+
+        <!-- 日誌顯示 -->
+        <div class="log-box" id="game-log">
+            歡迎來到愛豆模擬器！請開始你的養成之路。
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
